@@ -1,0 +1,31 @@
+Package: montyhall
+Title: Determine Probability of Outcomes by Strategy for Monty Hall Problem Game
+Version: 0.0.0.9000
+Authors@R: 
+    person("Beth Elyse Lyman", "Piontek", , 
+    "bpiontek@asu.edu", 
+    role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: This package provides each of the functions needed to play the 
+    Monty Hall Problem game in the scenario where there are three doors, two 
+    with goats behind them and one with a car. In this version of the game, the
+    contestant selects a door (by number) and the the host opens on of the two 
+    remaining doors, which has a goat behind it. This allows the contestant the 
+    opportunity to choose between staying with the door they originally 
+    selected, or switching to the other remaining unopened door. Once the 
+    contestant decides on their strategy (stay or switch) the package can 
+    indicate whether they will win (choose the door with the car behind it) or 
+    lose (choose a door with a goat behind it) the game. In addition to 
+    providing each of the individual functions needed to play the Monty Hall 
+    game, the package provides a wrapped function allowing for the entire game
+    to be played with the use of that single function. Further, it provides a 
+    function to allow the game to be played on a loop, so that the game runner
+    can determine the frequency of a given outcome (win/lose) for each game 
+    strategy (stay/switch).
+Depends: 
+    dplyr
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
